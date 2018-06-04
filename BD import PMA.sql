@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `fullname` varchar(80) DEFAULT NULL,
   `gender` varchar(1) DEFAULT NULL,
   `newsletter` tinyint(1) DEFAULT NULL
+  `rule` int(10) DEFAULT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
