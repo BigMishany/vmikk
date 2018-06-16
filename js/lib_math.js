@@ -178,8 +178,8 @@ $.sqr33=function (a,b,col) {
 
 $.figure=function (col) {
     console.log('a= ',a,'b= ',b,'c= ',col);
-    var step = Math.abs((a) -(b))/col;
-    console.log('step= ',step);
+    col =parseInt(col);
+    console.log('step= ',0);
     var table = new Array(col+1);
     for (var i = 0; i < table.length; i++)
         table[i] = new Array(1);
