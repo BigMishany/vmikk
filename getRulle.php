@@ -24,7 +24,7 @@ function main()
         $id_user = $_GET['id'];
         $id_user = $id_user + 0;
         $user = db_user_find_by_id($dbh, $id_user);
-        if($user['rule']==0)
+        if($user['newsletter']==0)
         {
             $result=db_user_update($dbh,$user['id'],1);
         }

@@ -285,16 +285,17 @@
             <input type="button" class="btn btn-light" id="expan" value="y=e^x">
             <input type="button" class="btn btn-light" id="lnn" value="y=ln(x)">
             <input type="button" class="btn btn-light" id="gipers" value="y=k/x"></br>
+            <input type="button" class="btn btn-light" id="square" value="Нарисовать">
 
         </div>
     </div>
 </div>
 
 
-<?if (($current_user['rule']==1)||($current_user['rule']==2)){ echo('
+
 
 <div class="content col-5">
-    <a href="#" align="center" id="pay">Оплаченный функционал</a>
+    <a href="#" align="center" id="pay"></a>
     <div id="payze">
     <div class="form-group row">
         <label for="func" class="col-sm-2 col-form-label">Введи функцию</label>
@@ -324,15 +325,6 @@
     </div>
 </div>
 
-
-<div class="content col-5">
-    <a href="#" align="center" id="pay">Фигуры</a>
-    <div id="payze">
-    
-    <input type="button" class="btn btn-light" id="square" value="Нарисовать">
-    </div>
-</div>
-<?php'); }else echo("");?>
 
 
 </div>

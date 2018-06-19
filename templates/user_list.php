@@ -26,7 +26,6 @@
 			<th>ФИО</th>
 			<th>Пол</th>
 			<th>Подписка</th>
-			<th>Оплачено</th>
 		</tr>
 		<?php foreach ($user_list as $i => $user): ?>
 		<tr class="<?= ($i+1)%2 == 0 ? 'even' : 'odd' ?>">
@@ -35,13 +34,13 @@
 			<td><?= htmlspecialchars($user['email']) ?></td>
 			<td><?= htmlspecialchars($user['fullname']) ?></td>
 			<td><?= $user['gender'] == 'M' ? 'Муж' : 'Жен' ?></td>
-			<td><?= $user['newsletter'] ? 'Да' : 'Нет' ?></td>
-			<td><?php if($user['rule']==1)
-			            {
-			                echo('<a href="/getRulle.php?id='.$user["id"].'">Выключить</a>');}
-			                elseif($user['rule']==0){ echo('<a href="/getRulle.php?id='.$user["id"].'">Включить</a>'); }
-			                else
-			                 echo("Администратор");   ?>
+            <td><?php if($user['newsletter']==1)
+                {
+                    echo('<a href="/getRulle.php?id='.$user["id"].'">Выключить</a>');}
+                elseif($user['rule']==0){ echo('<a href="/getRulle.php?id='.$user["id"].'">Включить</a>'); }
+                else
+                    echo("Администратор");   ?>
+
 		</tr>
 		<?php endforeach; ?>
 	</table>

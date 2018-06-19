@@ -450,7 +450,7 @@ function db_user_insert($dbh, $user)
 
 function db_user_update($dbh, $user,$rule)
 {
-    $query = 'UPDATE users SET rule=? WHERE id=?';
+    $query = 'UPDATE users SET newsletter=? WHERE id=?';
 
     // подготовливаем запрос для выполнения
     $stmt = mysqli_prepare($dbh, $query);
