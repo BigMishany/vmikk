@@ -38,7 +38,7 @@
                 {
                     echo('<a href="/getRulle.php?id='.$user["id"].'">Выключить</a>');}
                 elseif($user['rule']==0){ echo('<a href="/getRulle.php?id='.$user["id"].'">Включить</a>'); }
-                else
+                elseif($user['rule']==2)
                     echo("Администратор");   ?>
 
 		</tr>
